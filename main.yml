@@ -49,8 +49,9 @@ jobs:
 
     - name: Verify AIDL Installation
       run: |
-        find $HOME/android-sdk -name aidl || echo "AIDL not found"
-        which aidl || echo "AIDL not in PATH"
+        sudo apt install libstdc++6 
+        sudo apt install build-essential
+        sudo apt install aidl 
 
     - name: Add AIDL to PATH
       run: |
