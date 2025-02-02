@@ -21,7 +21,7 @@ jobs:
       - name: Set up Python 3.10.13
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10.13'
+          python-version: '3.10.16'
 
       # مرحله ۳: نصب وابستگی‌های سیستم
       - name: Install system dependencies
@@ -61,7 +61,7 @@ jobs:
 
       # مرحله ۸: آپلود APK به عنوان آرتیفکت
       - name: Upload APK as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: kivy-app
           path: bin/*.apk
